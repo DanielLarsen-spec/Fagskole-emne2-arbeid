@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgave 151H</title>
+</head>
+<body>
+    
+
+
+
+<pre id="output"></pre>
+
+
+
+
+<script>
+
+
+
+    function writeHash() {
+        document.getElementById('output').innerText += '#';
+    }
+
+    function writeSpace() {
+        document.getElementById('output').innerText += ' ';
+    }
+
+    function writeLineBreak() {
+        document.getElementById('output').innerText += '\n';
+    }
+
+    //Model
+    let n = 5;
+    createDiamond();
+    function createDiamond(){
+        for(let i = 1; i <= n; i++){
+            for(let j = 0; j < n -i; j++){
+                writeSpace();
+            }
+            for(let k = 0; k < 2 * i -1; k++){
+                writeHash();
+            }
+            writeLineBreak();
+        }
+       
+            for(let i = n -1; i >= 1; i--){
+                for(let j = 0; j < n - i; j++){
+                    writeSpace();
+                }
+                
+                for(let k = 0; k < 2 *i -1; k++){
+                    writeHash();
+                }
+                writeLineBreak();
+                
+            }
+        }
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

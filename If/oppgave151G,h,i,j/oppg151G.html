@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>151 g,h,i,j</title>
+</head>
+<body onload="updateView()">
+    
+    
+
+    <pre id="output"></pre>
+
+
+
+   <script>
+    function writeHash() {
+            document.getElementById('output').innerText += '#';
+        }
+
+        function writeSpace() {
+            document.getElementById('output').innerText += ' ';
+        }
+
+        function writeLineBreak() {
+            document.getElementById('output').innerText += '\n';
+        }
+        //model
+        let rowLength = 8;
+        let amountOfRows = 4;
+        drawTriangleOrWhatIsit();
+
+        function drawTriangleOrWhatIsit() {
+            for (let i = 0; i < amountOfRows; i++) {
+                for (let j = 0; j < rowLength; j++) {
+                    if(j >= i && j <= (rowLength - 1)-i){
+                        writeHash();
+                    } else{
+                        writeSpace();
+                    }
+                    
+                  
+                }
+                writeLineBreak();
+            }
+        }
+
+   
+
+
+        
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+   </script>
+
+
+
+
+
+
+</body>
+</html>
